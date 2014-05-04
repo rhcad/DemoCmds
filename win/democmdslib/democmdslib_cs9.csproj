@@ -48,9 +48,9 @@
   <ItemGroup>
     <Compile Include="api\DemoCmds.cs" />
     <Compile Include="core\Chars.cs" />
-    <Compile Include="core.cs" />
+    <Compile Include="core\democmds.cs" />
     <Compile Include="core\DemoCmdsGate.cs" />
-    <Compile Include="corePINVOKE.cs" />
+    <Compile Include="core\democmdsPINVOKE.cs" />
     <Compile Include="core\Floats.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
