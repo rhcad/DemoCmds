@@ -5,7 +5,8 @@
 DemoCmds is a template and example project containing customized shape and command classes based on [TouchVGCore](https://github.com/touchvg/TouchVGCore).
 You can customize the drawing behavior via implement your [CmdObserve class](core/cmds/cmds.cpp).
 
-You can use newproj.py to create your library project.
+You can use [newproj.py](newproj.py) to create your library project:
+Type `python newproj.py PrjName` or double click the file 'newproj.py'.
 
 ## Build
 
