@@ -22,7 +22,9 @@ Type `python newproj.py PrjName` or double click the file 'newproj.py'.
 
   - Cd the 'android' directory of this project and type `./build.sh` to build with ndk-build. The library `libDemoCmds.a` will be outputed to `android/DemoCmds/obj/local/armeabi`.
 
-    - MinGW and MSYS are recommend on Windows.
+    - Type `./build.sh -B` to rebuild the native libraries.
+    - Type `./build.sh APP_ABI=x86` to build for the x86 (Intel Atom) Emulator.
+    - MinGW and MSYS are recommend on Windows.    
 
     - To regenerate the kernel JNI classes, type `./build.sh -swig`
 (Need to install [SWIG](http://sourceforge.net/projects/swig/files/), and add the location to PATH).

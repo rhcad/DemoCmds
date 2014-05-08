@@ -1,5 +1,6 @@
 #!/bin/sh
 # Type './build.sh' to make Android native libraries.
+# Type './build.sh -B' to rebuild the native libraries.
 # Type `./build.sh -swig` to re-generate JNI classes too.
 #
 if [ "$1"x = "-swig"x ] || [ ! -f democmds_java_wrap.cpp ] ; then # Make JNI classes
@@ -14,4 +15,8 @@ if [ "$1"x = "-swig"x ] || [ ! -f democmds_java_wrap.cpp ] ; then # Make JNI cla
           ../../../core/gate/democmds.i
     python replacejstr.py
 fi
-ndk-build
+if [ "$1"x = "-swig"x ] ; then
+    ndk-build $2
+else
+    ndk-build $1 $2
+fi

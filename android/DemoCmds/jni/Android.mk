@@ -1,5 +1,5 @@
 LOCAL_PATH := $(call my-dir)
-LCORE_PATH := ../../../../TouchVGCore/android/TouchVGCore/obj/local/armeabi
+LCORE_PATH := ../../../../TouchVGCore/android/TouchVGCore/obj/local/$(TARGET_ARCH)
 CORE_INC   := $(LOCAL_PATH)/../../../../TouchVGCore/core/include
 CMDINC     := $(LOCAL_PATH)/../../../core
 CMDSRC     := ../../../core
@@ -20,6 +20,10 @@ LOCAL_STATIC_LIBRARIES := libTouchVGCore
 ifeq ($(TARGET_ARCH),arm)
 # Ignore "note: the mangling of 'va_list' has changed in GCC 4.4"
 LOCAL_CFLAGS += -Wno-psabi
+endif
+ifeq ($(TARGET_ARCH),x86)
+# For SWIG, http://stackoverflow.com/questions/6753241
+LOCAL_CFLAGS += -fno-strict-aliasing
 endif
 
 LOCAL_C_INCLUDES := $(CORE_INC) \
