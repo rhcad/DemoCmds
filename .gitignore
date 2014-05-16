@@ -1,4 +1,32 @@
-build
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+*.bak*
+*~
+._*
+*.lock
+*.swp
+*.out
+*.tmp
+*.o
+*.d
+profile
+
+#Xcode files
+#This ignores everything inside a *.xcodeproj except the project.pbxproj
+*.log
+xcuserdata
+xcshareddata
+
+*.pbxuser
+*.mode2v3
+*.mode1v3
+*.xcworkspace
+
+#do pod install yourself
+Pods/*
+
+#MSVS files
 *.ncb
 *.opt
 *.suo
@@ -7,23 +35,21 @@ build
 *.obj
 *.*sdf
 ipch
-*.ch*
-*.hh*
-*.o
-*.d
-*.tmp
-*_wrap.cxx
-*~
-*.DS_Store
-xcuserdata
-xcshareddata
-._*
+
+#Ellipse and ADT files
 .metadata
 bin
 gen
 obj
 gdb.setup
 gdbserver
-*.db
+
+#Project files
+[Bb]uild/
+CppDepend*
+*.cdproj
+*.ch*
+*.hh*
+*_wrap.cxx
 ios/output
 *.so
