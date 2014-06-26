@@ -3,6 +3,9 @@
 # Type './build.sh -arch arm64' to make iOS libraries for iOS 64-bit.
 # Type './build.sh clean' to remove object files.
 
+if [ ! -f ../../TouchVGCore/ios/build.sh ] ; then
+    git clone https://github.com/touchvg/TouchVGCore ../../TouchVGCore
+fi
 iphoneos71=`xcodebuild -showsdks | grep -i iphoneos7.1`
 iphoneos70=`xcodebuild -showsdks | grep -i iphoneos7.0`
 iphoneos61=`xcodebuild -showsdks | grep -i iphoneos6.1`
