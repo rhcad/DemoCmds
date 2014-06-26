@@ -12,7 +12,7 @@ Type `python newproj.py PrjName` or double click the file 'newproj.py'.
 
 ### Build for **iOS** platform on Mac OS X.
 
-- Type `pod install` with [CocoaPods](http://cocoapods.org). Need to remove `libPods.a` from Link Binary With Libraries.
+- Type `pod install` or `pod install --no-repo-update` with [CocoaPods](http://cocoapods.org). Need to remove `libPods.a` from Link Binary With Libraries.
 
 - Or open `ios/DemoCmds/DemoCmds.xcodeproj` in Xcode, then build the library project.
 
