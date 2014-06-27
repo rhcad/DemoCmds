@@ -3,8 +3,8 @@ PKGNAME  =touchvg
 PROJNAME =democmds
 SWIGFILE =democmds.i
 
-CORE_INC =$(ROOTDIR)/../TouchVGCore/core/include
-CORE_SRC =$(ROOTDIR)/../TouchVGCore/core/src
+CORE_INC =$(ROOTDIR)/../vgcore/core/include
+CORE_SRC =$(ROOTDIR)/../vgcore/core/src
 
 INCLUDES += -I$(CORE_INC) \
             -I$(CORE_INC)/geom \
@@ -25,5 +25,5 @@ SOURCES   =$(wildcard *.cpp) \
            $(wildcard $(CORE_SRC)/cmdbase/*.cpp) \
            $(wildcard ../cmds/*.cpp)
 
-include $(ROOTDIR)/../TouchVGCore/core/mk/config.mk
-include $(ROOTDIR)/../TouchVGCore/core/mk/Makefile.swig
+include $(ROOTDIR)/../vgcore/core/mk/config.mk
+include $(ROOTDIR)/../vgcore/core/mk/Makefile.swig

@@ -4,7 +4,7 @@ SRCS        =$(wildcard *.cpp)
 OBJS        =$(SRCS:.cpp=.o)
 INSTALL_DIR ?=$(ROOTDIR)/build
 
-CORE_INC    =$(ROOTDIR)/../TouchVGCore/core/include
+CORE_INC    =$(ROOTDIR)/../vgcore/core/include
 
 CPPFLAGS    += -Wall \
                -I$(CORE_INC) \

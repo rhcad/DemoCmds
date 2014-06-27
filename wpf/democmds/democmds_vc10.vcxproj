@@ -53,7 +53,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\..\TouchVGCore\core\include;..\..\..\TouchVGCore\core\include\geom;..\..\..\TouchVGCore\core\include\graph;..\..\..\TouchVGCore\core\include\canvas;..\..\..\TouchVGCore\core\include\shape;..\..\..\TouchVGCore\core\include\storage;..\..\..\TouchVGCore\core\include\cmd;..\..\..\TouchVGCore\core\include\cmdobserver;..\..\..\TouchVGCore\core\include\cmdbase;..\..\core\cmds;..\..\core\gate</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\vgcore\core\include;..\..\..\vgcore\core\include\geom;..\..\..\vgcore\core\include\graph;..\..\..\vgcore\core\include\canvas;..\..\..\vgcore\core\include\shape;..\..\..\vgcore\core\include\storage;..\..\..\vgcore\core\include\cmd;..\..\..\vgcore\core\include\cmdobserver;..\..\..\vgcore\core\include\cmdbase;..\..\core\cmds;..\..\core\gate</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;TOUCHVG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -63,7 +63,7 @@
       <DisableSpecificWarnings>4819;4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>..\..\..\TouchVGCore\win\build\$(Configuration)10;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\vgcore\win\build\$(Configuration)10;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
@@ -84,7 +84,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>..\..\..\TouchVGCore\core\include;..\..\..\TouchVGCore\core\include\geom;..\..\..\TouchVGCore\core\include\graph;..\..\..\TouchVGCore\core\include\canvas;..\..\..\TouchVGCore\core\include\shape;..\..\..\TouchVGCore\core\include\storage;..\..\..\TouchVGCore\core\include\cmd;..\..\..\TouchVGCore\core\include\cmdobserver;..\..\..\TouchVGCore\core\include\cmdbase;..\..\core\cmds;..\..\core\gate</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\vgcore\core\include;..\..\..\vgcore\core\include\geom;..\..\..\vgcore\core\include\graph;..\..\..\vgcore\core\include\canvas;..\..\..\vgcore\core\include\shape;..\..\..\vgcore\core\include\storage;..\..\..\vgcore\core\include\cmd;..\..\..\vgcore\core\include\cmdobserver;..\..\..\vgcore\core\include\cmdbase;..\..\core\cmds;..\..\core\gate</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;TOUCHVG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -94,7 +94,7 @@
       <DisableSpecificWarnings>4819;4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>..\..\..\TouchVGCore\win\build\$(Configuration)10;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\vgcore\win\build\$(Configuration)10;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
@@ -116,10 +116,10 @@
   <ItemGroup>
     <CustomBuild Include="..\..\core\gate\democmds.i">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Swig generating...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">swig.exe -c++ -csharp -namespace "democmds.core" -module democmds -outdir "$(ProjectDir)..\democmdslib\core" -o "$(ProjectDir)democmds_csharp_wrap.cpp" -I"$(ProjectDir)..\..\..\TouchVGCore\core\include" -I"$(ProjectDir)..\..\core\gate" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">swig.exe -c++ -csharp -namespace "democmds.core" -module democmds -outdir "$(ProjectDir)..\democmdslib\core" -o "$(ProjectDir)democmds_csharp_wrap.cpp" -I"$(ProjectDir)..\..\..\vgcore\core\include" -I"$(ProjectDir)..\..\core\gate" "%(FullPath)"</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)democmds_csharp_wrap.cpp;%(Outputs)</Outputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Swig generating...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">swig.exe -c++ -csharp -namespace "democmds.core" -module democmds -outdir "$(ProjectDir)..\democmdslib\core" -o "$(ProjectDir)democmds_csharp_wrap.cpp" -I"$(ProjectDir)..\..\..\TouchVGCore\core\include" -I"$(ProjectDir)..\..\core\gate" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">swig.exe -c++ -csharp -namespace "democmds.core" -module democmds -outdir "$(ProjectDir)..\democmdslib\core" -o "$(ProjectDir)democmds_csharp_wrap.cpp" -I"$(ProjectDir)..\..\..\vgcore\core\include" -I"$(ProjectDir)..\..\core\gate" "%(FullPath)"</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)democmds_csharp_wrap.cpp;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>

@@ -42,7 +42,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\..\TouchVGCore\core\include;..\..\..\TouchVGCore\core\include\geom;..\..\..\TouchVGCore\core\include\graph;..\..\..\TouchVGCore\core\include\canvas;..\..\..\TouchVGCore\core\include\shape;..\..\..\TouchVGCore\core\include\storage;..\..\..\TouchVGCore\core\include\cmd;..\..\..\TouchVGCore\core\include\cmdobserver;..\..\..\TouchVGCore\core\include\cmdbase;..\..\core\cmds;..\..\core\gate"
+				AdditionalIncludeDirectories="..\..\..\vgcore\core\include;..\..\..\vgcore\core\include\geom;..\..\..\vgcore\core\include\graph;..\..\..\vgcore\core\include\canvas;..\..\..\vgcore\core\include\shape;..\..\..\vgcore\core\include\storage;..\..\..\vgcore\core\include\cmd;..\..\..\vgcore\core\include\cmdobserver;..\..\..\vgcore\core\include\cmdbase;..\..\core\cmds;..\..\core\gate"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;TOUCHVG_EXPORTS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -63,7 +63,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="TouchVGCore.lib"
-				AdditionalLibraryDirectories="&quot;..\..\..\TouchVGCore\win\build\$(ConfigurationName)9&quot;"
+				AdditionalLibraryDirectories="&quot;..\..\..\vgcore\win\build\$(ConfigurationName)9&quot;"
 				IgnoreDefaultLibraryNames=""
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(IntDir)$(TargetName).pdb"
@@ -125,7 +125,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				WholeProgramOptimization="false"
-				AdditionalIncludeDirectories="..\..\..\TouchVGCore\core\include;..\..\..\TouchVGCore\core\include\geom;..\..\..\TouchVGCore\core\include\graph;..\..\..\TouchVGCore\core\include\canvas;..\..\..\TouchVGCore\core\include\shape;..\..\..\TouchVGCore\core\include\storage;..\..\..\TouchVGCore\core\include\cmd;..\..\..\TouchVGCore\core\include\cmdobserver;..\..\..\TouchVGCore\core\include\cmdbase;..\..\core\cmds;..\..\core\gate"
+				AdditionalIncludeDirectories="..\..\..\vgcore\core\include;..\..\..\vgcore\core\include\geom;..\..\..\vgcore\core\include\graph;..\..\..\vgcore\core\include\canvas;..\..\..\vgcore\core\include\shape;..\..\..\vgcore\core\include\storage;..\..\..\vgcore\core\include\cmd;..\..\..\vgcore\core\include\cmdobserver;..\..\..\vgcore\core\include\cmdbase;..\..\core\cmds;..\..\core\gate"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;TOUCHVG_EXPORTS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -146,7 +146,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="TouchVGCore.lib"
-				AdditionalLibraryDirectories="&quot;..\..\..\TouchVGCore\win\build\$(ConfigurationName)9&quot;"
+				AdditionalLibraryDirectories="&quot;..\..\..\vgcore\win\build\$(ConfigurationName)9&quot;"
 				IgnoreDefaultLibraryNames=""
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(IntDir)$(TargetName).pdb"
@@ -201,7 +201,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Swig generating..."
-						CommandLine="swig.exe -c++ -csharp -namespace &quot;democmds.core&quot; -module democmds -outdir $(ProjectDir)..\democmdslib\core -o &quot;$(ProjectDir)democmds_csharp_wrap.cpp&quot; -I&quot;$(ProjectDir)..\..\..\TouchVGCore\core\include&quot; -I&quot;$(ProjectDir)..\..\core\gate&quot; $(InputPath)&#x0D;&#x0A;"
+						CommandLine="swig.exe -c++ -csharp -namespace &quot;democmds.core&quot; -module democmds -outdir $(ProjectDir)..\democmdslib\core -o &quot;$(ProjectDir)democmds_csharp_wrap.cpp&quot; -I&quot;$(ProjectDir)..\..\..\vgcore\core\include&quot; -I&quot;$(ProjectDir)..\..\core\gate&quot; $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(ProjectDir)democmds_csharp_wrap.cpp"
 					/>
 				</FileConfiguration>
@@ -212,7 +212,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						Description="Swig generating..."
-						CommandLine="swig.exe -c++ -csharp -namespace &quot;democmds.core&quot; -module democmds -outdir $(ProjectDir)..\democmdslib\core -o &quot;$(ProjectDir)democmds_csharp_wrap.cpp&quot; -I&quot;$(ProjectDir)..\..\..\TouchVGCore\core\include&quot; -I&quot;$(ProjectDir)..\..\core\gate&quot; $(InputPath)&#x0D;&#x0A;"
+						CommandLine="swig.exe -c++ -csharp -namespace &quot;democmds.core&quot; -module democmds -outdir $(ProjectDir)..\democmdslib\core -o &quot;$(ProjectDir)democmds_csharp_wrap.cpp&quot; -I&quot;$(ProjectDir)..\..\..\vgcore\core\include&quot; -I&quot;$(ProjectDir)..\..\core\gate&quot; $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(ProjectDir)democmds_csharp_wrap.cpp"
 					/>
 				</FileConfiguration>

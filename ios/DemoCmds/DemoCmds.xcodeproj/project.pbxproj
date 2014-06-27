@@ -136,7 +136,7 @@
 				AE97A199186D51CE00DFEA77 /* storage */,
 			);
 			name = include;
-			path = ../../../../TouchVGCore/core/include;
+			path = ../../../../vgcore/core/include;
 			sourceTree = "<group>";
 		};
 		AE97A151186D51CE00DFEA77 /* canvas */ = {
