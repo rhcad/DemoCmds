@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
     'CLANG_CXX_LIBRARY' => 'libc++',
     "HEADER_SEARCH_PATHS" => '$(PODS_ROOT)/Headers/TouchVGCore'
   }
-  s.dependency "TouchVGCore", "~> 1.0.37"
+  s.dependency "TouchVGCore"
 end
