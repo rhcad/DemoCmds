@@ -53,7 +53,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\..\vgcore\core\include;..\..\..\vgcore\core\include\geom;..\..\..\vgcore\core\include\graph;..\..\..\vgcore\core\include\canvas;..\..\..\vgcore\core\include\shape;..\..\..\vgcore\core\include\storage;..\..\..\vgcore\core\include\cmd;..\..\..\vgcore\core\include\cmdobserver;..\..\..\vgcore\core\include\cmdbase;..\..\core\cmds;..\..\core\gate</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\vgcore\core\include;..\..\..\vgcore\core\include\geom;..\..\..\vgcore\core\include\graph;..\..\..\vgcore\core\include\canvas;..\..\..\vgcore\core\include\gshape;..\..\..\vgcore\core\include\shape;..\..\..\vgcore\core\include\storage;..\..\..\vgcore\core\include\cmd;..\..\..\vgcore\core\include\cmdobserver;..\..\..\vgcore\core\include\cmdbase;..\..\core\cmds;..\..\core\gate</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;TOUCHVG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -84,7 +84,7 @@
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>..\..\..\vgcore\core\include;..\..\..\vgcore\core\include\geom;..\..\..\vgcore\core\include\graph;..\..\..\vgcore\core\include\canvas;..\..\..\vgcore\core\include\shape;..\..\..\vgcore\core\include\storage;..\..\..\vgcore\core\include\cmd;..\..\..\vgcore\core\include\cmdobserver;..\..\..\vgcore\core\include\cmdbase;..\..\core\cmds;..\..\core\gate</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\vgcore\core\include;..\..\..\vgcore\core\include\geom;..\..\..\vgcore\core\include\graph;..\..\..\vgcore\core\include\canvas;..\..\..\vgcore\core\include\gshape;..\..\..\vgcore\core\include\shape;..\..\..\vgcore\core\include\storage;..\..\..\vgcore\core\include\cmd;..\..\..\vgcore\core\include\cmdobserver;..\..\..\vgcore\core\include\cmdbase;..\..\core\cmds;..\..\core\gate</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;TOUCHVG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
