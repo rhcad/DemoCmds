@@ -4,6 +4,8 @@
 #include "mgspfactory.h"
 #include "HitTestCmd.h"
 #include "mgshapet.h"
+#include "VGDimCmd.h"
+#include "VGDimExample.h"
 
 class DemoCmdsObserver : public CmdObserverDefault
 {
@@ -18,11 +20,12 @@ int DemoCmdsImpl::registerCmds(long mgView)
     MgView* view = MgView::fromHandle(mgView);
     view->getCmdSubject()->registerObserver(&_observer);
 
-    //MgShapeT<MgCube>::registerCreator(view->getShapeFactory());
+    MgShapeT<VGDimExample>::registerCreator(view->getShapeFactory());
     
     int n = 0;
     
     n += mgRegisterCommand<HitTestCmd>(view);
+    n += mgRegisterCommand<VGDimCmd>(view);
     
     return n;
 }

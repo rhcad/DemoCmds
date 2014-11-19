@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		AE97A1B3186D5A3700DFEA77 /* mgvector.h in Headers */ = {isa = PBXBuildFile; fileRef = AE97A188186D51CE00DFEA77 /* mgvector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AED72D161A1CE2940081ED2B /* mgdrawline.h in Headers */ = {isa = PBXBuildFile; fileRef = AED72D151A1CE2940081ED2B /* mgdrawline.h */; };
+		AEDC146A1A1CD995003C950C /* VGDimExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEDC14681A1CD994003C950C /* VGDimExample.cpp */; };
+		AEDC146B1A1CD995003C950C /* VGDimExample.h in Headers */ = {isa = PBXBuildFile; fileRef = AEDC14691A1CD995003C950C /* VGDimExample.h */; };
+		AEDC146E1A1CDA5D003C950C /* VGDimCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEDC146C1A1CDA5D003C950C /* VGDimCmd.cpp */; };
+		AEDC146F1A1CDA5D003C950C /* VGDimCmd.h in Headers */ = {isa = PBXBuildFile; fileRef = AEDC146D1A1CDA5D003C950C /* VGDimCmd.h */; };
 		AEF6D1F918050FA9009E30CC /* cmds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEF6D18B18050FA9009E30CC /* cmds.cpp */; };
 		AEF6D1FA18050FA9009E30CC /* cmds.h in Headers */ = {isa = PBXBuildFile; fileRef = AEF6D18C18050FA9009E30CC /* cmds.h */; };
 		AEF6D1FB18050FA9009E30CC /* HitTestCmd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEF6D18D18050FA9009E30CC /* HitTestCmd.cpp */; };
@@ -74,6 +79,11 @@
 		AE97A187186D51CE00DFEA77 /* mglog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mglog.h; sourceTree = "<group>"; };
 		AE97A188186D51CE00DFEA77 /* mgvector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mgvector.h; sourceTree = "<group>"; };
 		AE97A19A186D51CE00DFEA77 /* mgstorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mgstorage.h; sourceTree = "<group>"; };
+		AED72D151A1CE2940081ED2B /* mgdrawline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgdrawline.h; sourceTree = "<group>"; };
+		AEDC14681A1CD994003C950C /* VGDimExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VGDimExample.cpp; sourceTree = "<group>"; };
+		AEDC14691A1CD995003C950C /* VGDimExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGDimExample.h; sourceTree = "<group>"; };
+		AEDC146C1A1CDA5D003C950C /* VGDimCmd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VGDimCmd.cpp; sourceTree = "<group>"; };
+		AEDC146D1A1CDA5D003C950C /* VGDimCmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGDimCmd.h; sourceTree = "<group>"; };
 		AEF6D18B18050FA9009E30CC /* cmds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cmds.cpp; sourceTree = "<group>"; };
 		AEF6D18C18050FA9009E30CC /* cmds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmds.h; sourceTree = "<group>"; };
 		AEF6D18D18050FA9009E30CC /* HitTestCmd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HitTestCmd.cpp; sourceTree = "<group>"; };
@@ -201,6 +211,7 @@
 		AE97A15A186D51CE00DFEA77 /* cmdbase */ = {
 			isa = PBXGroup;
 			children = (
+				AED72D151A1CE2940081ED2B /* mgdrawline.h */,
 				AE97A15B186D51CE00DFEA77 /* mgcmddraw.h */,
 				AE97A15C186D51CE00DFEA77 /* mgdrawarc.h */,
 				AE97A15D186D51CE00DFEA77 /* mgdrawrect.h */,
@@ -295,6 +306,10 @@
 				AEF6D18C18050FA9009E30CC /* cmds.h */,
 				AEF6D18D18050FA9009E30CC /* HitTestCmd.cpp */,
 				AEF6D18E18050FA9009E30CC /* HitTestCmd.h */,
+				AEDC14681A1CD994003C950C /* VGDimExample.cpp */,
+				AEDC14691A1CD995003C950C /* VGDimExample.h */,
+				AEDC146C1A1CDA5D003C950C /* VGDimCmd.cpp */,
+				AEDC146D1A1CDA5D003C950C /* VGDimCmd.h */,
 			);
 			path = cmds;
 			sourceTree = "<group>";
@@ -316,8 +331,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE97A1B3186D5A3700DFEA77 /* mgvector.h in Headers */,
+				AEDC146F1A1CDA5D003C950C /* VGDimCmd.h in Headers */,
 				AEF6D1FE18050FA9009E30CC /* DemoCmds.h in Headers */,
 				AEF6D1FA18050FA9009E30CC /* cmds.h in Headers */,
+				AED72D161A1CE2940081ED2B /* mgdrawline.h in Headers */,
+				AEDC146B1A1CD995003C950C /* VGDimExample.h in Headers */,
 				AEF6D1FC18050FA9009E30CC /* HitTestCmd.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +424,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEDC146A1A1CD995003C950C /* VGDimExample.cpp in Sources */,
+				AEDC146E1A1CDA5D003C950C /* VGDimCmd.cpp in Sources */,
 				AEF6D1F918050FA9009E30CC /* cmds.cpp in Sources */,
 				AEF6D1FB18050FA9009E30CC /* HitTestCmd.cpp in Sources */,
 				AEF6D1FD18050FA9009E30CC /* DemoCmds.cpp in Sources */,
@@ -419,7 +439,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -449,7 +468,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;

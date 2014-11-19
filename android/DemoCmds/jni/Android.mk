@@ -42,6 +42,8 @@ LOCAL_C_INCLUDES := $(CORE_INC) \
 LOCAL_SRC_FILES  := $(CMDSRC)/gate/DemoCmds.cpp \
                     $(CMDSRC)/cmds/cmds.cpp \
                     $(CMDSRC)/cmds/HitTestCmd.cpp \
+                    $(CMDSRC)/cmds/VGDimCmd.cpp \
+                    $(CMDSRC)/cmds/VGDimExample.cpp \
                     democmds_java_wrap.cpp
 
 include $(BUILD_SHARED_LIBRARY)
