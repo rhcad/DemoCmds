@@ -50,10 +50,12 @@ bool VGDimExample::_load(MgShapeFactory* factory, MgStorage* s)
 bool VGDimExample::_draw(int mode, GiGraphics& gs, const GiContext& ctx, int segment) const
 {
     std::stringstream ss;
-    Matrix2d m(gs.xf().modelToWorld());
+    float a = angle();
     
-    ss << (_getPoint(0) * m).distanceTo(_getPoint(1) * m);
-    gs.drawTextAt(ctx.getLineARGB(), ss.str().c_str(), center(), 3.f, 1, angle());
+    ss << mgbase::roundReal(length(), 1);
+    gs.drawTextAt(ctx.getLineARGB(), ss.str().c_str(), center(), 3.f,
+                  GiGraphics::kAlignCenter|GiGraphics::kAlignBottom,
+                  mgbase::toRange(a, _MGZERO - _M_PI_2, _MGZERO + _M_PI_2));
     
     return gs.drawLine(&ctx, _getPoint(0), _getPoint(1));
 }
