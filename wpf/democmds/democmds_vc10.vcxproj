@@ -125,17 +125,23 @@ swig.exe -c++ -csharp -namespace "democmds.core" -module democmds -outdir "$(Pro
 swig.exe -c++ -csharp -namespace "democmds.core" -module democmds -outdir "$(ProjectDir)..\democmdslib\core" -o "$(ProjectDir)democmds_csharp_wrap.cpp" -I"$(ProjectDir)..\..\..\vgcore\core\include" -I"$(ProjectDir)..\..\core\gate" "%(FullPath)"
 )</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)democmds_csharp_wrap.cpp;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\core\cmds\cmds.cpp" />
     <ClCompile Include="..\..\core\cmds\HitTestCmd.cpp" />
+    <ClCompile Include="..\..\core\cmds\VGDimCmd.cpp" />
+    <ClCompile Include="..\..\core\cmds\VGDimExample.cpp" />
     <ClCompile Include="..\..\core\gate\DemoCmds.cpp" />
     <ClCompile Include=".\democmds_csharp_wrap.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\core\cmds\cmds.h" />
     <ClInclude Include="..\..\core\cmds\HitTestCmd.h" />
+    <ClInclude Include="..\..\core\cmds\VGDimCmd.h" />
+    <ClInclude Include="..\..\core\cmds\VGDimExample.h" />
     <ClInclude Include="..\..\core\gate\DemoCmds.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
