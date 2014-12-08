@@ -8,16 +8,12 @@
 #include "mgshape.h"
 #include <string>
 
-//! 点标注图形类
-/*! \ingroup CORE_SHAPE
- */
 class MgNote : public MgBaseShape
 {
     MG_DECLARE_CREATE(MgNote, MgBaseShape, 35)
 public:
     const char* getText() const { return _text.c_str(); }
     void setText(const char* text) { _text = text; }
-    bool changePostNum(const MgShapes* shapes, const char* ext2);
     
     Vector2d getOffset() const { return _textoff; }
     void setOffset(const Vector2d& vec) { _textoff = vec; }

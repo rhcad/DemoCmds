@@ -160,30 +160,3 @@ const MgShape* MgNote::findNote(const MgShapes* shapes, const char* text)
     
     return NULL;
 }
-
-bool MgNote::changePostNum(const MgShapes* shapes, const char* ext2)
-{
-    if (_text.size() > 0 && _text.size() < 3) {
-        std::string text(_text);
-        
-        if (ext2 && ext2[0] && ext2[1]) {
-            text += &ext2[1];
-            if (findNote(shapes, text.c_str()))
-                return false;
-        }
-        while (text.size() <= _text.size() + 1 && findNote(shapes, text.c_str())) {
-            char &c = text[text.size() - 1];
-            if (c >= '0' && c <= '8') {
-                c = (char)(c + 1);
-            } else {
-                text += '1';
-            }
-        }
-        if (!findNote(shapes, text.c_str())) {
-            _text = text;
-            return true;
-        }
-    }
-    
-    return false;
-}
