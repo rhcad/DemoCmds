@@ -33,6 +33,9 @@
     <ClCompile Include="..\..\core\cmds\VGDimExample.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\core\cmds\mgnote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\core\gate\DemoCmds.h">
@@ -48,6 +51,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\core\cmds\VGDimExample.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\core\cmds\mgnote.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -6,6 +6,7 @@
 #include "mgshapet.h"
 #include "VGDimCmd.h"
 #include "VGDimExample.h"
+#include "mgnote.h"
 
 class DemoCmdsObserver : public CmdObserverDefault
 {
@@ -21,6 +22,7 @@ int DemoCmdsImpl::registerCmds(long mgView)
     view->getCmdSubject()->registerObserver(&_observer);
 
     MgShapeT<VGDimExample>::registerCreator(view->getShapeFactory());
+    MgShapeT<MgNote>::registerCreator(view->getShapeFactory());
     
     int n = 0;
     

@@ -44,6 +44,7 @@ LOCAL_SRC_FILES  := $(CMDSRC)/gate/DemoCmds.cpp \
                     $(CMDSRC)/cmds/HitTestCmd.cpp \
                     $(CMDSRC)/cmds/VGDimCmd.cpp \
                     $(CMDSRC)/cmds/VGDimExample.cpp \
+                    $(CMDSRC)/cmds/mgnote.cpp \
                     democmds_java_wrap.cpp
 
 include $(BUILD_SHARED_LIBRARY)

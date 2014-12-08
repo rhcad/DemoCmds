@@ -258,6 +258,14 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\core\cmds\mgnote.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\core\cmds\mgnote.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\core\cmds\VGDimCmd.cpp"
 				>
 			</File>

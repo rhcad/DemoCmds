@@ -132,6 +132,7 @@ swig.exe -c++ -csharp -namespace "democmds.core" -module democmds -outdir "$(Pro
   <ItemGroup>
     <ClCompile Include="..\..\core\cmds\cmds.cpp" />
     <ClCompile Include="..\..\core\cmds\HitTestCmd.cpp" />
+    <ClCompile Include="..\..\core\cmds\mgnote.cpp" />
     <ClCompile Include="..\..\core\cmds\VGDimCmd.cpp" />
     <ClCompile Include="..\..\core\cmds\VGDimExample.cpp" />
     <ClCompile Include="..\..\core\gate\DemoCmds.cpp" />
@@ -140,6 +141,7 @@ swig.exe -c++ -csharp -namespace "democmds.core" -module democmds -outdir "$(Pro
   <ItemGroup>
     <ClInclude Include="..\..\core\cmds\cmds.h" />
     <ClInclude Include="..\..\core\cmds\HitTestCmd.h" />
+    <ClInclude Include="..\..\core\cmds\mgnote.h" />
     <ClInclude Include="..\..\core\cmds\VGDimCmd.h" />
     <ClInclude Include="..\..\core\cmds\VGDimExample.h" />
     <ClInclude Include="..\..\core\gate\DemoCmds.h" />

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023D6FC51A35471A00D4837A /* mgnote.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 023D6FC31A35471A00D4837A /* mgnote.cpp */; };
+		023D6FC61A35471A00D4837A /* mgnote.h in Headers */ = {isa = PBXBuildFile; fileRef = 023D6FC41A35471A00D4837A /* mgnote.h */; };
 		AE97A1B3186D5A3700DFEA77 /* mgvector.h in Headers */ = {isa = PBXBuildFile; fileRef = AE97A188186D51CE00DFEA77 /* mgvector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AED72D161A1CE2940081ED2B /* mgdrawline.h in Headers */ = {isa = PBXBuildFile; fileRef = AED72D151A1CE2940081ED2B /* mgdrawline.h */; };
 		AEDC146A1A1CD995003C950C /* VGDimExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEDC14681A1CD994003C950C /* VGDimExample.cpp */; };
@@ -46,6 +48,8 @@
 		023A1AAD1998C2840067C2C6 /* mgshapes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mgshapes.h; sourceTree = "<group>"; };
 		023A1AAE1998C2840067C2C6 /* mgshapet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mgshapet.h; sourceTree = "<group>"; };
 		023A1AAF1998C2840067C2C6 /* mgspfactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mgspfactory.h; sourceTree = "<group>"; };
+		023D6FC31A35471A00D4837A /* mgnote.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mgnote.cpp; sourceTree = "<group>"; };
+		023D6FC41A35471A00D4837A /* mgnote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mgnote.h; sourceTree = "<group>"; };
 		028CFF57199CAAB600E19F80 /* mgpath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mgpath.h; sourceTree = "<group>"; };
 		AE2A3A49178FC511000194AE /* libDemoCmds.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDemoCmds.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2A3A50178FC511000194AE /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
@@ -302,6 +306,8 @@
 		AEF6D18A18050FA9009E30CC /* cmds */ = {
 			isa = PBXGroup;
 			children = (
+				023D6FC31A35471A00D4837A /* mgnote.cpp */,
+				023D6FC41A35471A00D4837A /* mgnote.h */,
 				AEF6D18B18050FA9009E30CC /* cmds.cpp */,
 				AEF6D18C18050FA9009E30CC /* cmds.h */,
 				AEF6D18D18050FA9009E30CC /* HitTestCmd.cpp */,
@@ -330,6 +336,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023D6FC61A35471A00D4837A /* mgnote.h in Headers */,
 				AE97A1B3186D5A3700DFEA77 /* mgvector.h in Headers */,
 				AEDC146F1A1CDA5D003C950C /* VGDimCmd.h in Headers */,
 				AEF6D1FE18050FA9009E30CC /* DemoCmds.h in Headers */,
@@ -425,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEDC146A1A1CD995003C950C /* VGDimExample.cpp in Sources */,
+				023D6FC51A35471A00D4837A /* mgnote.cpp in Sources */,
 				AEDC146E1A1CDA5D003C950C /* VGDimCmd.cpp in Sources */,
 				AEF6D1F918050FA9009E30CC /* cmds.cpp in Sources */,
 				AEF6D1FB18050FA9009E30CC /* HitTestCmd.cpp in Sources */,
