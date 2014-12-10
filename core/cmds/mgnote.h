@@ -8,6 +8,7 @@
 #include "mgshape.h"
 #include <string>
 
+//! Example shape class with text.
 class MgNote : public MgBaseShape
 {
     MG_DECLARE_CREATE(MgNote, MgBaseShape, 35)

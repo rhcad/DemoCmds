@@ -8,6 +8,7 @@
 
 #include "mgdrawline.h"
 
+//! Example command class to draw text shapes.
 class VGDimCmd : public MgCmdDrawLine
 {
 public:

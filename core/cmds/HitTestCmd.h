@@ -7,6 +7,7 @@
 #include "mgcmd.h"
 #include <list>
 
+//! Example command class to hit shapes.
 class HitTestCmd : public MgCommand
 {
 public:

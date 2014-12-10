@@ -9,6 +9,7 @@
 #include "mgline.h"
 #include "mgshape.h"
 
+//! Example shape class with text.
 class VGDimExample : public MgLine
 {
     MG_DECLARE_CREATE(VGDimExample, MgLine, 41)
