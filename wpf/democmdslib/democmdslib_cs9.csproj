@@ -46,7 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="api\DemoCmds.cs" />
+    <Compile Include="api\DemoCmdsAPI.cs" />
     <Compile Include="core\Chars.cs" />
     <Compile Include="core\democmds.cs" />
     <Compile Include="core\DemoCmdsGate.cs" />

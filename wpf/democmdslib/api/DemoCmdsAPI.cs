@@ -4,7 +4,7 @@ using System.Text;
 
 namespace democmds.api
 {
-    public class DemoCmds
+    public class DemoCmdsApi
     {
         // mgView: WPFViewHelper.cmdViewHandle()
         public static int registerCmds(int mgView)
