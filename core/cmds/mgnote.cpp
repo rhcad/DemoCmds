@@ -1,6 +1,6 @@
 // mgnote.cpp
 // Created by Zhang Yungui on 14-12-8.
-// License: LGPL, https://github.com/touchvg
+// License: LGPL, https://github.com/rhcad
 
 #include "mgnote.h"
 #include "mgshape_.h"

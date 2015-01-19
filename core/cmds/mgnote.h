@@ -1,6 +1,6 @@
 // mgnote.h
 // Created by Zhang Yungui on 14-12-8.
-// License: LGPL, https://github.com/touchvg
+// License: LGPL, https://github.com/rhcad
 
 #ifndef TOUCHVG_NOTE_SHAPE_H_
 #define TOUCHVG_NOTE_SHAPE_H_

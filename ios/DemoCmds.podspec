@@ -2,12 +2,12 @@ Pod::Spec.new do |s|
   s.name        = "DemoCmds"
   s.version     = "0.0.1"
   s.summary     = "A template and example project containing customized shape and command classes."
-  s.homepage    = "https://github.com/touchvg/DemoCmds"
+  s.homepage    = "https://github.com/rhcad/DemoCmds"
   #s.license     = { :type => "LGPL", :file => "LICENSE.md" }
   s.author      = { "Zhang Yungui" => "rhcad@hotmail.com" }
 
   s.platform    = :ios, "6.0"
-  s.source      = { :git => "https://github.com/touchvg/DemoCmds.git", :branch => "master" }
+  s.source      = { :git => "https://github.com/rhcad/DemoCmds.git", :branch => "master" }
   s.source_files  = "core", "core/**/*.{h,cpp}"
   #s.exclude_files = "ios/DemoCmds/DemoCmds"
   s.public_header_files = "core/gate/*.h"

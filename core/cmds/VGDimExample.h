@@ -1,6 +1,6 @@
 // VGDimExample.h
 // Created by Zhang Yungui on 14-11-19.
-// License: LGPL, https://github.com/touchvg
+// License: LGPL, https://github.com/rhcad
 //
 
 #ifndef __TOUCHVG__VGDimExample__
