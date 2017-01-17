@@ -1,5 +1,5 @@
 LOCAL_PATH := $(call my-dir)
-LCORE_PATH := ../../../../vgcore/android/TouchVGCore/obj/local/$(APP_ABI)
+LCORE_PATH := ../../../../vgcore/android/TouchVGCore/obj/local/$(TARGET_ARCH_ABI)
 CORE_INC   := $(LOCAL_PATH)/../../../../vgcore/core/include
 CMDINC     := $(LOCAL_PATH)/../../../core
 CMDSRC     := ../../../core
